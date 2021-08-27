@@ -1,0 +1,197 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('images/myrstore.jpg');
+	font-family:'Verdana',arial,sans serif;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.menu-bar {
+	display: flex;
+	background-color: #012169;
+	justify-content: space-around;
+	padding: 20px 30px;
+}
+
+.menu-bar ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu-bar ul li{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+	color: #fff;
+}
+
+.menu-bar ul li a:hover{
+	background-color: #808080;
+	color: #fff;
+}
+
+.container {
+	max-width: 1080px;
+	height: 500px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.container a {
+	color: white;
+}
+
+.middle{
+	width: 1200px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	margin-left: 80px;
+}
+
+
+.button{
+	position: absolute;
+	top: 82%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 200%;
+}
+
+.button a{
+	color: white;
+}
+
+.btn{
+	border: 2px solid #fff;
+	padding: 20px 30px;
+	text-decoration: none;
+	background-color: #000;
+}
+
+
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #000;
+	transition: 0.3s ease;
+}
+
+.info{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 198%;
+	text-align: center;
+}
+
+.inf{
+	color: #fff;
+	text-decoration: none; 
+}
+
+.klik{
+	position: absolute;
+	top: 72%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 130%;
+	text-align: center;
+}
+
+.klk{
+	color: #fff;
+	text-decoration: none; 
+}
+
+.kelompok {
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 198%;
+	text-align: center;
+}
+
+.klm {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 959px){
+	#container{
+		width: 100%;
+	}
+	#container{
+		width: 70%;
+	}
+}
+
+
+@media screen and (max-width: 1080px){
+	.container{
+		width: 100%;
+	}
+	.middle{
+		width: 68%;
+		float: right;
+	}
+	.middle a{
+		font-size: 20px;
+
+	}
+	.button{
+		font-size: 100%;
+	}
+	.btn{
+		padding: 20px 30px;
+	}
+}
+
+@media screen and (max-width: 780px){
+	.header
+	.container{
+		width: 60%;
+	}
+
+	.middle a{
+		font-size: 16px;
+
+	}
+	.footer{
+		text-align: center;
+	}
+	.middle{
+		width: auto;
+		float: none;
+	}
+
+	.button{
+		font-size: 100%;
+	}
+	.btn{
+		padding: 20px 30px;
+	}
+
+	.info
+	.klik
+	.kelompok{
+		width: auto;
+		float: none;
+	}
+}

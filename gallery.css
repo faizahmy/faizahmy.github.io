@@ -1,0 +1,195 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background:white;
+	font-family:'Verdana',arial,sans serif;
+	font-size: 15px;
+}
+
+.menu-bar {
+	display: flex;
+	background-color: #012169;
+	justify-content: space-around;
+	padding: 20px 30px;
+}
+
+.menu-bar ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu-bar ul li{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+	color: #fff;
+}
+
+.menu-bar ul li a:hover{
+	background-color: #808080;
+	color: #fff;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin:10px;
+	background: #9e9afb;
+}
+
+.header h1 {
+	text-align: center;
+	font-family: 'Niramit', sans-serif;
+	font-size: 48px;
+}
+
+.middle{
+	width: 1200px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	margin-left: 80px;
+}
+
+.baju {
+	padding: 5px 5px;
+	margin-right: 2px;
+	margin-top: 5px;
+	float: left;
+	background-color: #012169;
+	border-radius: 5px;
+	width: 25%;
+	height: 350px;
+}
+
+.foto img {
+	padding:5px 0 5px 0;
+	width: 100%;
+	height: 250px;
+}
+
+.nama {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 0 0 3px 0;
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	color: white;
+}
+
+.halaman {
+		text-align: center;
+	}
+
+	.halaman ul{
+		display: inline-flex;
+		color: black;
+		list-style: none;
+		
+	}
+
+	.halaman ul li{
+		margin:10px;
+		padding:10px;
+		background-color: #bd0404;
+		border-radius: 15px;
+	}
+
+	.halaman ul a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+	}
+
+	.halaman ul li:hover{
+	background:#076144;
+	border-radius: 20px;
+	}
+
+	.halaman ul li a:hover{
+		color: white;
+	}
+
+	.footer{
+		color: black;
+		clear: both;
+		padding: 15px;
+		margin: 10px;
+		background-color: #012169;
+		color: white;
+}
+
+
+@media screen and (max-width: 959px){
+	#container{
+		width: 100%;
+	}
+	#container{
+		width: 70%;
+	}
+	#right-column{
+		width: 30%;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1080px){
+	.container{
+		width: 100%;
+	}
+	.left{
+		width: 25%;
+		background:#d6ccfe;
+	}
+	.middle{
+		width: 68%;
+		float: right;
+	}
+	.right{
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+		background:#d6ccfe;
+	}
+}
+
+@media screen and (max-width: 780px){
+	.header
+	.footer{
+		text-align: center;
+	}
+	.left{
+		width: auto;
+		float: none;
+	}
+	.middle{
+		width: auto;
+		float: none;
+	}
+	.right{
+		width: auto;
+		float: none;
+	}
+}
